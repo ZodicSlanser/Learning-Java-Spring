@@ -1,9 +1,9 @@
-package com.zodic.learn_spring_boot.O1_simple_api;
+package com.zodic.learn_spring_boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = "com.zodic.learn_spring_boot" )
+@SpringBootApplication()
 public class LearnSpringBoot {
 
 	public static void main(String[] args) {

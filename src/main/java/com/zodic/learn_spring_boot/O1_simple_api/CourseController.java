@@ -1,10 +1,9 @@
-package com.zodic.learn_spring_boot.simple_api;
+package com.zodic.learn_spring_boot.O1_simple_api;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 import java.util.List;
 
 // path => GET /courses
@@ -19,6 +18,7 @@ public class CourseController {
 
     @RequestMapping("/courses")
     public List<Course> getAll(){
+        System.out.println("GERE");
        return courseService.getAll();
     }
 }

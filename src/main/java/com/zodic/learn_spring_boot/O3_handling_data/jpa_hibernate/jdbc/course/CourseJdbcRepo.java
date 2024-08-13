@@ -1,4 +1,4 @@
-package com.zodic.learn_spring_boot.O3_handling_data.jpa_hibernate.jpa.course;
+package com.zodic.learn_spring_boot.O3_handling_data.jpa_hibernate.jdbc.course;
 
 
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -18,7 +18,7 @@ public class CourseJdbcRepo {
 
     private static final String CREATE_QUERY =
             """
-                    CREATE TABLE course(
+                    CREATE TABLE jdbc_course(
                         id bigint not null,
                         name varchar(255) not null,
                         professor varchar(255) not null,
@@ -31,7 +31,7 @@ public class CourseJdbcRepo {
     private static final String INSERT_QUERY =
             """
                     insert into
-                            course (id, name, professor, email)
+                            jdbc_course (id, name, professor, email)
                             values
                             (?, ?, ?, ?);
                             
@@ -39,16 +39,16 @@ public class CourseJdbcRepo {
 
     private static final String DELETE_QUERY =
             """
-            DELETE FROM COURSE WHERE id=?;
+            DELETE FROM jdbc_course WHERE id=?;
             """;
 
     private static final String SELECT_ALL_QUERY =
             """
-            SELECT * FROM COURSE;
+            SELECT * FROM jdbc_course;
             """;
     private static final String SELECT_BY_ID_QUERY =
             """
-            SELECT * FROM COURSE WHERE ID=?;
+            SELECT * FROM jdbc_course WHERE ID=?;
             """;
     public void create(){
         jdbcTemplate.execute(CREATE_QUERY);
@@ -60,8 +60,8 @@ public class CourseJdbcRepo {
     public void delete(int id){
         jdbcTemplate.update(DELETE_QUERY,id);
     }
-    public List<Map<String, Object>> selectAll(){
-       return jdbcTemplate.queryForList(SELECT_ALL_QUERY);
+    public List<Course> selectAll(){
+        return jdbcTemplate.query(SELECT_ALL_QUERY,new BeanPropertyRowMapper<>(Course.class));
     }
     public Course selectById(long id){
        return jdbcTemplate.queryForObject(SELECT_BY_ID_QUERY,new BeanPropertyRowMapper<>(Course.class),id);

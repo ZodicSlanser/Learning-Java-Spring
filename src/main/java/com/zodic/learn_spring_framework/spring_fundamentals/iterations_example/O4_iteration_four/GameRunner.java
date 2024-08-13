@@ -1,4 +1,4 @@
-package com.zodic.learn_spring_framework.spring_fundamentals.O5_iteration_four;
+package com.zodic.learn_spring_framework.spring_fundamentals.iterations_example.O4_iteration_four;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;

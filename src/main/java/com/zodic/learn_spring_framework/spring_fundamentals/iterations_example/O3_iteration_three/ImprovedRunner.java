@@ -1,4 +1,4 @@
-package com.zodic.learn_spring_framework.spring_fundamentals.O4_iteration_three;
+package com.zodic.learn_spring_framework.spring_fundamentals.iterations_example.O3_iteration_three;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

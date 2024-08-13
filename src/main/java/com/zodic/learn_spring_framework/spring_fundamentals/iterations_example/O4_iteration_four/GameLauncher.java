@@ -1,11 +1,11 @@
-package com.zodic.learn_spring_framework.spring_fundamentals.O5_iteration_four;
+package com.zodic.learn_spring_framework.spring_fundamentals.iterations_example.O4_iteration_four;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.zodic.learn_spring_framework.O5_iteration_four")
+@ComponentScan("com.zodic.learn_spring_framework.spring_fundamentals.iterations_example.O4_iteration_four")
 public class GameLauncher {
 
     public static void main(String[] args) {

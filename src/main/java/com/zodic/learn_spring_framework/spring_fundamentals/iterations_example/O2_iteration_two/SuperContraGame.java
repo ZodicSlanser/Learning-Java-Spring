@@ -1,4 +1,4 @@
-package com.zodic.learn_spring_framework.spring_fundamentals.O2_iteration_two;
+package com.zodic.learn_spring_framework.spring_fundamentals.iterations_example.O2_iteration_two;
 
 public class SuperContraGame implements Controllable {
     public void up() {

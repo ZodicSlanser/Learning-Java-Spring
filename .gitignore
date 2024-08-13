@@ -4,6 +4,12 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+
+## Java
+# either the 3rd party diff or IDEA:
+*.java.orig
+
+
 ### STS ###
 .apt_generated
 .classpath

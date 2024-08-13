@@ -1,4 +1,4 @@
-package com.zodic.learn_spring_boot.simple_api;
+package com.zodic.learn_spring_boot.O1_simple_api;
 
 import org.springframework.stereotype.Service;
 

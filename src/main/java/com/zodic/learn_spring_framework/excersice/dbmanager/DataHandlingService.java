@@ -10,7 +10,7 @@ public class DataHandlingService {
     DatabaseService db;
 
     //uncomment this to use the MongoDB Service
-//        public DataHandlingService (DatabaseService db){
+//        public BusinessHandlingService (DatabaseService db){
 //        this.db = db;
 //    }
     public DataHandlingService(@Qualifier("MySQL") DatabaseService db) {

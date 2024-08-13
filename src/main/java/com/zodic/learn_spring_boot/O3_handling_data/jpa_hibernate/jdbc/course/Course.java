@@ -1,23 +1,9 @@
-package com.zodic.learn_spring_boot.O3_handling_data.jpa_hibernate.jpa.course;
+package com.zodic.learn_spring_boot.O3_handling_data.jpa_hibernate.jdbc.course;
 
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-
-@Entity(name = "JPA_Course")
 public class Course {
-
-    @Id
    private long id;
-
-    @Column
    private  String name;
-
-    @Column
    private String professor;
-    @Column
    private  String email;
 
    public Course(){};

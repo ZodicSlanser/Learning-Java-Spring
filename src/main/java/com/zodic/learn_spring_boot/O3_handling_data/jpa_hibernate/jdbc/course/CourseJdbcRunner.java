@@ -5,10 +5,10 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class CourseJdbcCmdRunner implements CommandLineRunner {
+public class CourseJdbcRunner implements CommandLineRunner {
     private CourseJdbcRepo courseJdbcRepo;
 
-    public CourseJdbcCmdRunner(CourseJdbcRepo courseJdbcRepo) {
+    public CourseJdbcRunner(CourseJdbcRepo courseJdbcRepo) {
         this.courseJdbcRepo = courseJdbcRepo;
     }
 
@@ -23,12 +23,7 @@ public class CourseJdbcCmdRunner implements CommandLineRunner {
         this.courseJdbcRepo.delete(4);
         System.out.println(this.courseJdbcRepo.selectById(2));
         var allRows = this.courseJdbcRepo.selectAll();
-        allRows.forEach(row->{
-            row.forEach((k,v)->{
-                System.out.println(k+" : "+v);
-            });
-            System.out.println("************");
-        });
+        allRows.forEach(System.out::println);
         System.out.println("=============JDBC==================");
 
     }

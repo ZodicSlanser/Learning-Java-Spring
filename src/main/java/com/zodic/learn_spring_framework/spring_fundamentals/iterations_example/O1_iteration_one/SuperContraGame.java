@@ -1,4 +1,4 @@
-package com.zodic.learn_spring_framework.spring_fundamentals.O1_iteration_one;
+package com.zodic.learn_spring_framework.spring_fundamentals.iterations_example.O1_iteration_one;
 
 public class SuperContraGame {
     //create the up, down, left, right methods

@@ -1,7 +1,4 @@
-package com.zodic.learn_spring_boot.simple_api;
-
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
+package com.zodic.learn_spring_boot.O1_simple_api;
 
 
 public class Course {
